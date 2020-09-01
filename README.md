@@ -30,7 +30,9 @@ Clone the repository and make sure you have Python 3.6 or later. Then follow the
 - MSCOCO: we used gluoncv to download and interface with the dataset:  https://gluon-cv.mxnet.io/build/examples_datasets/mscoco.html
 - NUSWIDE: Download the dataset from 'https://lms.comp.nus.edu.sg/wp-content/uploads/2019/research/nuswide/NUS-WIDE.html'. Notice: you need to contact the creators of NUWIDE to get access to the raw images dataset
 
-3. You need to edit the paths in the script to point to the dataset and output directories in your machine. These instances are marked with a comment "# [TODO]" in the script. 
+3. Download the pretrained models. This can be simply done by calling the 'download_pretrained_model' function in any of the scripts. Alternatively, you can download any other model, but the model architecture should be edited in the script in the main loop. 
+
+4. You need to edit the paths in the script to point to the dataset and output directories in your machine. These instances are marked with a comment "# [TODO]" in the script. 
 
 ## Acknowledgment
 This work has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 765068.
