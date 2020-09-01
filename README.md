@@ -1,5 +1,5 @@
 # Confidence-based Weighted Loss for Multi-label Classification with Missing Labels
-This is the code for the ICMR 2020 paper [‘Confidence-based Weighted Loss for Multi-label Classification with Missing Labels’]. If you use the code in your research, please cite the paper as:
+This is the code for the ICMR 2020 paper 'Confidence-based Weighted Loss for Multi-label Classification with Missing Labels'. If you use the code in your research, please cite the paper as:
 
 > Karim M. Ibrahim, Elena V. Epure, Geoffroy Peeters, and Gaël Richard. 2020. Confidence-based Weighted Loss for Multi-label Classification with Missing Labels. In Proceedings of *the 2020 International Conference on Multimedia Retrieval* (ICMR '20). Association for Computing Machinery, New York, NY, USA, 291–295. DOI:https://doi.org/10.1145/3372278.3390728.
 
