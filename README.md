@@ -3,23 +3,6 @@ This is the code for the ICMR 2020 paper 'Confidence-based Weighted Loss for Mul
 
 > Karim M. Ibrahim, Elena V. Epure, Geoffroy Peeters, and Gaël Richard. 2020. Confidence-based Weighted Loss for Multi-label Classification with Missing Labels. In Proceedings of *the 2020 International Conference on Multimedia Retrieval* (ICMR '20). Association for Computing Machinery, New York, NY, USA, 291–295. DOI:https://doi.org/10.1145/3372278.3390728.
 
-This repository contains the following notebooks: 
-- 'CB-WCE-MSCOCO' to finetune the pretrained resnset model on the MSCOCO dataset using the weighted cross entropy with 'ignore missing' protocol.
-- 'CB-WCE-NUSWIDE' to finetune the pretrained resnset model on the NUSWIDE dataset using the weighted cross entropy with 'ignore missing' protocol.
-- 'CE-MSCOCO' to finetune the pretrained resnet model on the MSCOCO dataset using traditional cross entropy loss
-- 'CE-NUSWIDE' to finetune the pretrained resnet model on the NUSWIDE dataset using traditional cross entropy loss
-- 'IM-WCE-MSCOCO' to finetune the pretrained resnet model on the MSCOCO dataset using the weighted cross entropy with 'correlations' protocol
-- 'IM-WCE-NUSWIDE' to finetune the pretrained resnet model on the NUSWIDE dataset using the weighted cross entropy with 'correlations' protocol. 
-- 'MSCOCO-preprocessing' to preprocess the MSCOCO dataset
-- 'NUSWIDE-preprocessing' to preprocess the NUSWIDE dataset
-- 'MSCOCO-results' to compile the results from all experiments and produce the plots for the MSCOCO dataset
-- 'NUSWIDE-results' to compile the results from all experiments and produce the plots for the NUSWIDE dataset
-
-The repositoy contains two directories: 
-- 'labels_balanced_4labels' contains the grountruth and splits for the MSCOCO dataset computed with different ratios of artificial missing labels
-- 'labels_balanced_nus' contrains the grountruth and splits for the NUSWIDE dataset computed with different ratios of artificial missing labels.
-These splits could be recomputed by running the preprocessing script for each dataset 
-
 ## Instructions
 
 Clone the repository and make sure you have Python 3.6 or later. Then follow these instructions.
@@ -33,6 +16,25 @@ Clone the repository and make sure you have Python 3.6 or later. Then follow the
 3. Download the pretrained models. This can be simply done by calling the 'download_pretrained_model' function in any of the scripts. Alternatively, you can download any other model, but the model architecture should be edited in the script in the main loop. 
 
 4. You need to edit the paths in the script to point to the dataset and output directories in your machine. These instances are marked with a comment "# [TODO]" in the script. 
+
+## Items 
+This repository contains the following notebooks: 
+- '**MSCOCO-preprocessing**' to preprocess the MSCOCO dataset
+- '**NUSWIDE-preprocessing**' to preprocess the NUSWIDE dataset
+- '**CE-MSCOCO**' to finetune the pretrained model on the MSCOCO dataset using traditional cross entropy loss
+- '**CE-NUSWIDE**' to finetune the pretrained model on the NUSWIDE dataset using traditional cross entropy loss
+- '**CB-WCE-MSCOCO**' to finetune the pretrained model on the MSCOCO dataset using the weighted cross entropy with 'ignore missing' protocol.
+- '**CB-WCE-NUSWIDE**' to finetune the pretrained model on the NUSWIDE dataset using the weighted cross entropy with 'ignore missing' protocol.
+- '**IM-WCE-MSCOCO**' to finetune the pretrained model on the MSCOCO dataset using the weighted cross entropy with 'correlations' protocol
+- '**IM-WCE-NUSWIDE**' to finetune the pretrained model on the NUSWIDE dataset using the weighted cross entropy with 'correlations' protocol. 
+- '**MSCOCO-results**' to compile the results from all experiments and produce the plots for the MSCOCO dataset
+- '**NUSWIDE-results**' to compile the results from all experiments and produce the plots for the NUSWIDE dataset
+
+The repositoy contains two directories: 
+- '**labels_balanced_4labels**' contains the grountruth and splits for the MSCOCO dataset computed with different ratios of artificial missing labels
+- '**labels_balanced_nus**' contrains the grountruth and splits for the NUSWIDE dataset computed with different ratios of artificial missing labels.
+These splits could be recomputed by running the preprocessing script for each dataset 
+
 
 ## Acknowledgment
 This work has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No. 765068.
