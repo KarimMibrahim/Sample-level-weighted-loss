@@ -30,9 +30,9 @@ This repository contains the following notebooks:
 - '**MSCOCO-results**' to compile the results from all experiments and produce the plots for the MSCOCO dataset
 - '**NUSWIDE-results**' to compile the results from all experiments and produce the plots for the NUSWIDE dataset
 
-The repositoy contains two directories: 
+The repository contains two directories: 
 - '**labels_balanced_4labels**' contains the grountruth and splits for the MSCOCO dataset computed with different ratios of artificial missing labels
-- '**labels_balanced_nus**' contrains the grountruth and splits for the NUSWIDE dataset computed with different ratios of artificial missing labels.
+- '**labels_balanced_nus**' contains the grountruth and splits for the NUSWIDE dataset computed with different ratios of artificial missing labels.
 These splits could be recomputed by running the preprocessing script for each dataset 
 
 
